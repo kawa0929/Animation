@@ -96,7 +96,7 @@ fun Animation(modifier: Modifier) {
     )
 
 
-    Column {Column (Modifier.background(backgroundColor)){
+    Column (Modifier.background(backgroundColor).fillMaxSize()){
         Button(
             onClick = { appear = !appear },
             modifier = Modifier.rotate(buttonAngle)
@@ -124,8 +124,6 @@ fun Animation(modifier: Modifier) {
 
 
         ) {
-
-
             Image(
                 painter = painterResource(id = R.drawable.sky),
                 contentDescription = "星空背景圖",
@@ -141,7 +139,7 @@ fun Animation(modifier: Modifier) {
 
             )
         }
-        Image(
+            Image(
             painter = painterResource(id = R.drawable.rocket),
             contentDescription = "火箭",
             modifier = Modifier
@@ -151,10 +149,9 @@ fun Animation(modifier: Modifier) {
                 ) {
                     fly = !fly
                 }
-        )
+            )
 
+     }
     }
-    }
-}
 
 
