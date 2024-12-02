@@ -152,6 +152,6 @@ fun Animation(modifier: Modifier) {
             )
 
      }
-    }
+}
 
 
